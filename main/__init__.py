@@ -1,5 +1,7 @@
-import main.servo_controller
+from main.audio_controller import AudioController
 
-main.servo_controller.set_angle(90)
+if __name__ == "__main__":
+    ac = AudioController()
 
-
+    while True:
+        ac.listen()
