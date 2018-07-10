@@ -5,7 +5,6 @@ from time import sleep
 class ServoController:
 
     def __init__(self, servo):
-        # SG90 has a duty threshold of 3-11%
 
         self.servo = servo
         self.alignment = 1
@@ -23,12 +22,11 @@ class ServoController:
         self.pwm.stop()
         GPIO.cleanup()
 
-    # SG90 isn't very precise, rotates 90 degrees both direction, so let's try with 5 degree steps
     def set_angle(self, angle):
         # easier to think with +/- 90 degrees, but to do the maths it's better to do 0-180
         angle += 90
         # divide 180 degrees with the 8% duty window, 22.5 degrees = 1% duty
-        duty = angle / 22.5 + self.servo.MIN_DUTY.value
+        duty = (angle / (180/(self.servo.MAX_DUTY.value-self.servo.MIN_DUTY.value))) + self.servo.MIN_DUTY.value
         if duty > self.servo.MAX_DUTY.value:
             duty = self.servo.MAX_DUTY.value
         if duty < self.servo.MIN_DUTY.value:
