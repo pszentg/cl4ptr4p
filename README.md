@@ -20,7 +20,7 @@ After hooking the stuff together, make sure to check:
 Assuming you're using a NOOBS raspbian, the rest should be installed as is (including Python3)
 
 ## License
-This project is licensed under the GNU GPU 3.0 License - see [here](https://github.com/pszentgyorgyi/cl4ptr4p/blob/master/LICENSE)
+This project is licensed under the GNU GPL 3.0 License - see [here](https://github.com/pszentgyorgyi/cl4ptr4p/blob/master/LICENSE)
 
 ## Future Improvements
 * fine tuning the pre-filtering of the audio (eg. running the feed through an implementation of the Goertzel algorithm) - it recognizes any noise, not only claps
