@@ -16,6 +16,7 @@ After hooking the stuff together, make sure to check:
 
 ### Dependencies
 * `pip3 install pyaudio`
+
 Assuming you're using a NOOBS raspbian, the rest should be installed as is (including Python3)
 
 ## License
