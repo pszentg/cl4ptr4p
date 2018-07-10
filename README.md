@@ -14,14 +14,14 @@ After hooking the stuff together, make sure to check:
 * the PWM cable on the servo (colored orange) is hooked to GPIO17 (PIN 11) on the RPi
 * you have the codecs, the RPi recognizes the USB sound card ($ arecord --list-devices)
 
-###Dependencies
+### Dependencies
 * `pip3 install pyaudio`
 Assuming you're using a NOOBS raspbian, the rest should be installed as is (including Python3)
 
-##License
+## License
 This project is licensed under the GNU GPU 3.0 License - see [here](https://github.com/pszentgyorgyi/cl4ptr4p/blob/master/LICENSE)
 
-##Future Improvements
+## Future Improvements
 * fine tuning the pre-filtering of the audio (eg. running the feed through an implementation of the Goertzel algorithm) - it recognizes any noise, not only claps
 * reduce background noise
 * unit tests
