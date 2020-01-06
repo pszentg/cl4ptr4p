@@ -1,5 +1,5 @@
-# cl4ptr4p
-simple python project to control the lights in the room with your claps.
+# lightswitch
+simple python project to control the light switches by phyisically flipping them with a tiny motor
 
 
 ## Getting started
